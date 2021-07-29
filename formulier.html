@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meld je recept aan</title>
+</head>
+
+<body>
+    <h1>Wil jij je favoriete recept terug zien op onze website? Neem dan snel contact op!</h1>
+    <form class="form" name="recepten" method="POST" data-netlify="true">
+        <label for="name">Voor- en achternaam: </label><br>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="email">E-mail: </label><br>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="phone">Telefoonnummer: </label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"><br>
+
+        <label for="age">Wat is je leeftijd? Je moet minimaal 16 jaar zijn:</label><br>
+        <input type="number" id="age" name="age" min="16" max="99"><br>
+
+        <p>Selecteer je geslacht:</p>
+        <input type="radio" id="Vrouw" name="gender" value="Vrouw">
+        <label for="Vrouw">Vrouw</label><br>
+        <input type="radio" id="Man" name="gender" value="Man">
+        <label for="Man">Man</label><br>
+        <input type="radio" id="non-binair" name="gender" value="non-binair">
+        <label for="non-binair">Non-Binair</label><br>
+        <input type="radio" id="Geen" name="gender" value="Geen">
+        <label for="Geen">Wil ik niet zeggen</label><br>
+
+        <p>Wat is je favoriete keuken? Meerdere opties mogelijk.</p>
+        <input type="checkbox" id="Frans" name="cuisine" value="Frans">
+        <label for="Frans">De Franse keuken</label><br>
+        <input type="checkbox" id="Italiaans" name="cuisine" value="Italiaans">
+        <label for="Frans">De Italiaanse keuken</label><br>
+        <input type="checkbox" id="Spaans" name="cuisine" value="Spaans">
+        <label for="Spaans">De Spaanse keuken</label><br>
+        <input type="checkbox" id="Arabisch" name="cuisine" value="Arabisch">
+        <label for="Frans">De Arabische keuken</label><br>
+
+        <label for="color">Wat is je favoriete schortkleur?</label>
+        <input type="color" id="color" name="color" value="#ffffff"><br>
+
+        <label for="bio">Schrijf een korte biografie van maximaal 250 karakters:</label><br>
+        <textarea max="250" id="bio" name="bio" rows="8" cols="80"></textarea><br>
+
+        <label for="recept">Upload je laatste recept:</label>
+        <input type="file" id="recept" name="recept"><br>
+
+        <label for="website">Je eigen recepten website:</label><br>
+        <input type="url" id="website" name="website"><br>
+
+        <input type="reset"><input type="submit">
+    </form>
+</body>
+
+</html>
